@@ -1,0 +1,151 @@
+/* plus-jakarta-sans-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-regular.woff2") format("woff2");
+}
+/* plus-jakarta-sans-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-500.woff2") format("woff2");
+}
+/* plus-jakarta-sans-600 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-600.woff2") format("woff2");
+}
+/* plus-jakarta-sans-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/plus-jakarta-sans-v8-latin-700.woff2") format("woff2");
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
+.inner {
+  display: flex;
+  padding: 0 112px;
+  align-items: center;
+  padding: 30px;
+}
+
+.logo-a {
+  margin-right: 50px;
+}
+
+.logo-a:hover {
+  opacity: 0.800000011920929;
+}
+
+.logo-a:active {
+  opacity: 0.6000000238418579;
+}
+
+.header-list {
+  display: flex;
+  list-style-type: none;
+  margin: -15px;
+}
+
+.header-item {
+  margin: 15px;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.nav-a {
+  color: #101010;
+}
+
+.nav-a:hover {
+  color: #1aab7b;
+}
+
+.nav-a:active {
+  color: #1aab7b;
+  opacity: 0.6000000238418579;
+}
+
+.tel {
+  display: inline-flex;
+  padding: 12px 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: #101010;
+
+  color: #fff;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+
+  margin-left: auto;
+}
+
+.tel:hover {
+  border-radius: 6px;
+  border: 1px solid #1aab7b;
+  background: #fff;
+  color: #1aab7b;
+}
+
+.tel:active {
+  border-radius: 6px;
+  opacity: 0.6000000238418579;
+  background: #101010;
+  color: #fff;
+}
