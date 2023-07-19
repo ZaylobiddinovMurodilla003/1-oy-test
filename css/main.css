@@ -33,6 +33,7 @@
 
 body {
   margin: 0;
+  font-family: plus "jakarta" "sans";
 }
 
 * {
@@ -48,7 +49,7 @@ img {
 .container {
   width: 1480px;
   margin: 0 auto;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 .visually-hidden {
@@ -65,16 +66,16 @@ a {
   text-decoration: none;
 }
 
-.inner {
-  display: flex;
-  padding: 0 112px;
-  align-items: center;
+ul {
+  list-style-type: none;
 }
 
 /* header */
 
 .header-inner {
-  padding-top: 30px;
+  display: flex;
+  padding: 30px 112px;
+  align-items: center;
 }
 
 .logo-a {
@@ -158,9 +159,9 @@ a {
 /* hero */
 
 .hero-inner {
+  display: flex;
   justify-content: space-between;
-  padding-top: 91px;
-  padding-bottom: 156px;
+  padding: 91px 112px 156px;
 }
 
 .hero-left {
@@ -332,7 +333,7 @@ iframe {
 /* work */
 
 .work-inner {
-  padding: 100px 112px;
+  padding: 100px 112px 0;
 }
 
 .work-heading-2 {
@@ -373,7 +374,11 @@ iframe {
   margin-bottom: 100px;
 }
 
-.work-item:nth-child(even){
+.bottom {
+  margin-bottom: 0;
+}
+
+.work-item:nth-child(even) {
   flex-direction: row-reverse;
 }
 
@@ -391,4 +396,203 @@ iframe {
   font-weight: 700;
   line-height: 140%;
   margin-bottom: 20px;
+}
+
+/* /work */
+
+/* contact */
+
+.contact-inner {
+  padding: 150px 216px 200px;
+}
+
+.contact-top {
+  width: 650px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.contact-heading-2-container {
+  width: 411px;
+  margin: 0 auto;
+}
+
+.contact-heading-2 {
+  color: #101010;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+
+  margin-bottom: 16px;
+}
+
+.contact-p {
+  color: #636f87;
+  text-align: center;
+  font-family: Plus Jakarta Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+form {
+  width: 1008px;
+  padding: 64px 312px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  border-radius: 6px;
+  background: #f2f4f6;
+}
+
+.border-bottom {
+  color: #101010;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding: 15px;
+  padding-bottom: 21px;
+  border: none;
+  border-bottom: 1px solid #c8ccd3;
+  background-color: #f2f4f6;
+  margin-bottom: 35px;
+}
+
+.border-bottom::placeholder {
+  color: #101010;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+select {
+  appearance: none;
+  background-image: url("../images/down-arrow.png");
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: right 15px center;
+}
+
+.button {
+  width: 180px;
+  height: 59px;
+  padding: 20px 40px;
+  border-radius: 6px;
+  background: #1aab7b;
+  border: 1px solid transparent;
+
+  color: #fff;
+
+  font-family: Plus Jakarta Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+/* /contact */
+
+/* footer */
+
+.site-footer {
+  background-color: #101010;
+}
+
+.footer-top-inner {
+  padding: 100px 112px;
+  border-bottom: 1px solid #a1a8b7;
+}
+
+.footer-inner {
+  background-color: #101010;
+  display: flex;
+}
+
+.footer-list {
+  margin-right: auto;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.footer-item {
+  list-style-type: none;
+  color: white;
+  font-size: 20px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.footer-sublist {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.subitem-link {
+  text-decoration: none;
+  color: #a1a8b7;
+  font-size: 18px;
+  font-family: Plus Jakarta Sans;
+  font-weight: 500;
+  line-height: 27px;
+  word-wrap: break-word;
+}
+
+.subitem-link:hover {
+  color: #1aab7b;
+}
+
+.subitem-link:active {
+  opacity: 0.8;
+  color: #1aab7b;
+}
+
+.footer-subitem {
+  margin-right: 151px;
+  margin-bottom: 26px;
+}
+
+.last-subitem {
+  margin-right: 0;
+}
+
+.last-sublist {
+  display: flex;
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.order {
+  padding: 0;
+}
+
+.footer-bottom-inner {
+  padding: 50px 112px;
+}
+
+.box {
+  background-color: #101010;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  color: #fff;
+  margin-left: auto;
 }
